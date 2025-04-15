@@ -193,3 +193,22 @@ nav ul li:hover {
     color: #EADCD2;
     font-size: large;
 }
+
+
+.figures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .figures > div {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
