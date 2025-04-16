@@ -439,6 +439,7 @@ body.dark-mode button:hover {
         flex-direction: column;
         gap: 40px;
         align-items: center;
+        padding-bottom: 30px;
     }
 
     .footer-container {
