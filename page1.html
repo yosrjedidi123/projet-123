@@ -6,7 +6,7 @@
     <title>Yo&Silver</title>
     <link rel="stylesheet" href="page1.css" />
     <script src="page1.js" defer></script>
-    <link rel="icon" type="image" href=images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
     <div class="herosection">
@@ -24,8 +24,21 @@
             </ul>
             <div class="right">
                 <div class="cart">🛒</div>
+
+                <div id="cart-container" style="display: none;">
+                  <h3>Votre panier</h3>
+                  <ul id="cart-items">
+                    <!-- Contenu du panier ici -->
+                  </ul>
+                  <p>Total : <span id="cart-total">0.00</span> €</p>
+                  <button onclick="checkout()">Commander</button>
+                </div>
+
+
+
                 <button id="darkModeToggle">🌙</button>
             </div>
+            
         </nav>
 <!----patie 1.1------->
         <div class="separator"></div>
