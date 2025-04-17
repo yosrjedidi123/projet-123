@@ -36,6 +36,12 @@ nav {
     padding-bottom: 30px;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -47,10 +53,34 @@ nav ul li:hover {
     color: #C4A661;
 }
 
-.herosection .cart {
-    font-size: x-large;
+.herosection .right{
+    display: flex;
 }
 
+.herosection .cart {
+    font-size:35px;
+}
+
+#darkModeToggle {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #D1A379;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 50px;
+}
+
+#darkModeToggle:hover {
+    background-color: #b98b62;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
 
 
 /*----partie 1----*/
@@ -174,4 +204,97 @@ nav ul li:hover {
     font-size: 14px;
     color: #EADCD2;
     font-size: large;
+}
+
+  /*------ Dark Mode------*/
+
+
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode .herosection,
+body.dark-mode .heroSectionContent1,
+body.dark-mode .heroSectionContent2,
+body.dark-mode .heroSectionContent3 {
+    background-color: #2e2e2e;
+    color: #f0f0f0;
+}
+
+body.dark-mode nav,
+body.dark-mode .footer {
+    background-color: #121212;
+    color: #f0f0f0;
+    border-color: #444;
+}
+
+body.dark-mode a {
+    color: #f0f0f0;
+}
+
+body.dark-mode h1 {
+    color: #f0f0f0;
+}
+
+body.dark-mode .footer a:hover {
+    color: #D1A379;
+}
+
+body.dark-mode button {
+    background-color: #C4A661;
+    color: #000;
+}
+
+body.dark-mode button:hover {
+    background-color: #a5864e;
+}
+
+/* Mobile css code */
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        font-size: large;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    nav .logo{
+        font-size: 30px;
+    }
+
+    nav .right{
+        align-items: center;
+    }
+
+    .heroSectionContent1,
+    .heroSectionContent2,
+    .heroSectionContent3 {
+        padding: 50px 20px;
+    }
+
+    .heroSectionContent1 .figures,
+    .heroSectionContent2 .figures,
+    .heroSectionContent3 .figures {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+    }
+
 }
